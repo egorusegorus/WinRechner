@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
+            button4 = new Button();
             button2 = new Button();
             button3 = new Button();
             button1 = new Button();
@@ -46,6 +47,7 @@
             // 
             // panel1
             // 
+            panel1.Controls.Add(button4);
             panel1.Controls.Add(button2);
             panel1.Controls.Add(button3);
             panel1.Controls.Add(button1);
@@ -55,12 +57,22 @@
             panel1.Controls.Add(textBox1);
             panel1.Location = new Point(12, 12);
             panel1.Name = "panel1";
-            panel1.Size = new Size(498, 53);
+            panel1.Size = new Size(609, 53);
             panel1.TabIndex = 0;
+            // 
+            // button4
+            // 
+            button4.Location = new Point(413, 18);
+            button4.Name = "button4";
+            button4.Size = new Size(108, 23);
+            button4.TabIndex = 12;
+            button4.Text = "Daten speichern";
+            button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
             // 
             // button2
             // 
-            button2.Location = new Point(413, 17);
+            button2.Location = new Point(527, 17);
             button2.Name = "button2";
             button2.Size = new Size(75, 23);
             button2.TabIndex = 7;
@@ -141,7 +153,7 @@
             listBox2.ItemHeight = 24;
             listBox2.Location = new Point(15, 103);
             listBox2.Name = "listBox2";
-            listBox2.Size = new Size(495, 124);
+            listBox2.Size = new Size(606, 124);
             listBox2.TabIndex = 8;
             listBox2.SelectedIndexChanged += listBox2_SelectedIndexChanged;
             // 
@@ -179,7 +191,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(517, 244);
+            ClientSize = new Size(640, 244);
             Controls.Add(label6);
             Controls.Add(label5);
             Controls.Add(label4);
@@ -209,5 +221,6 @@
         private Label label4;
         private Label label5;
         private Label label6;
+        private Button button4;
     }
 }
